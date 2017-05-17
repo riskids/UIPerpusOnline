@@ -1,0 +1,162 @@
+body {
+	margin: 0px;
+	background: #e9ebee;
+}
+
+.serba-none{
+	border:none;
+	background: rgba(27, 28, 29, 0);
+}
+
+.gelap{
+	width: 100%;
+    height: 67px;
+    z-index: 99;
+    background: rgba(51, 51, 51, 0.61);
+    float: left;
+    margin-top: -324px;
+}
+
+
+#section0{
+		background-image: url(../img/login.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+.welcome{
+
+	top: 30%;
+	position: absolute;
+	left: 37%;
+}
+
+.welcome h1 ,p {
+	opacity: -1;
+}
+
+.ui.buttons .or:before {
+	background: #355259;
+	color: rgb(255, 255, 255);
+}
+
+	img{
+	    -webkit-transition: all 0.7s ease-out;
+		-moz-transition: all 0.7s ease-out;
+		-o-transition: all 0.7s ease-out;
+		transition: all 0.7s ease-out;
+		}
+
+
+#section2 {
+	background: #092756;
+	background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+
+.loginboss{
+	width: 30%;
+    top: 25%;
+    position: absolute;
+    left: 60%;
+    opacity:-1;
+    color: white !important;
+}
+
+/** animasi login bawah ke atas **/
+.loginboss h1{
+	font-size: 14em;
+	opacity: -1;
+}
+
+.loginboss p{
+	color: white !important;
+}
+
+.ui.form .field {
+    clear: both;
+    margin: 0 0 1em;
+    text-align: -webkit-left;
+    font-size: 15px;
+}
+
+.ui.inverted.segment, .ui.primary.inverted.segment {
+        background: rgba(36, 94, 121, 0.5);
+    color: rgba(255,255,255,.9);
+    padding: 35px;
+    border-top: 7px solid rgb(84, 200, 255);
+}
+
+.promosi{
+	opacity: -1;
+}
+
+.pilih{
+	margin:0px 0px 0px 150px;
+}
+
+.cari{
+	width: 45%;
+}
+
+.segment p{
+	opacity: 1 !important;
+	font-size: 22px;
+    color: #372727;
+}
+
+.birutua {
+	    background-color: #1366a5 !important;
+}
+
+.hapus {
+	color: rgb(219, 40, 40);
+}
+
+.edit{
+	color: rgb(32, 127, 199);
+	margin-left:20px;
+}
+
+.modal p{
+	opacity: 1 !important;
+}
+
+.kaki{
+	background: rgb(45, 105, 165);
+    width: 100%;
+    height: 75px;
+    padding: 19px;
+    margin-top: 30px;
+    border-top: 5px dashed#2185CA;
+    box-shadow: 0px 0px 12px 1px;
+}
+
+.kaki p{
+	opacity: 1 !important;
+	text-align: center;
+	color: #e9ebee;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.register{
+	background: rgba(36, 94, 121, 0.82) !important;
+}
+
+.putih label{
+	color: rgb(255, 255, 255) !important;
+}
+
+.putihtua{
+	color: rgb(199, 199, 199) !important;
+}
+
+.modal2{
+	
+	margin-top: 100px;
+}

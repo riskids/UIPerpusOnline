@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PerpusKu</title>
+
+	<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="../css/utama.css" />
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+	<script src="https://use.fontawesome.com/f56290fe45.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+	<script src="../semantic/dist/semantic.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+
+
+
+        $(document).ready(function() {
+        	//modal boss
+        	$(document).ready(function() {
+				$('.ui.basic.modal')
+				  .modal('attach events', '.baru', 'show');
+			 });
+
+            $('#fullpage').fullpage({
+
+              anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+              menu: '#menu',
+              'offsetSections':true,
+              'scrollHorizontally': true,
+
+            	'afterLoad': function(anchorLink, index){
+
+					//animasi login boss
+					if(index == 1){
+						//moving the image
+						$('.welcome').find('h1').delay(1000).animate({
+							opacity: '1'
+						}, 1500, 'easeOutExpo');
+
+						$('.welcome').find('p').delay(2000).animate({
+							opacity: '1'
+						}, 1500, 'easeOutExpo');
+
+						$('.welcome').find('.promosi').delay(3000).animate({
+							opacity: '1'
+						}, 1500, 'easeOutExpo');
+
+						$('#section0').find('.welcome').delay(4000).animate({
+							left: '15%'
+						}, 1500, 'easeOutExpo');
+
+						$('.loginboss').find('h1').delay(4500).animate({
+							fontSize:'0'
+						}, 3500, 'easeOutExpo');
+
+						$('#section0').find('.loginboss').delay(4600).animate({
+							opacity: '1'
+						}, 1500, 'easeOutExpo');
+
+					}
+
+				},
+
+            });
+
+
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+
+
+
+<div id="fullpage">
+
+    <div class="section active" id="section0" height="10000">
+    		<div class="welcome">
+        <h1 style="color:#eaeaeb;text-shadow:4px 1px 9px #000">PerpusKu</h1>
+        <p style="color: rgb(234, 234, 235);text-shadow: 4px 1px 9px #000;border-top: 1px solid white;">Easy to Access Library</p><br>
+        <div class="promosi">
+         <button class="ui instagram button"><i class="instagram icon"></i>Instagram</button>
+         <div class="ui labeled button" tabindex="0">
+ 		 <div class="ui red button">
+  		  <i class="heart icon"></i> Like
+ 		 </div>
+ 		 <a class="ui basic red left pointing label">
+  		  9,999+
+ 		 </a>
+			</div>
+			</div>
+
+		  </div>
+
+			<!-- start login boss -->
+			<div class="loginboss">
+			<h1>tumbal</h1>
+			      <div class="ui inverted segment">
+			       <p style="opacity:1 !important">LOGIN</p>
+			        <br>
+						  <div class="ui inverted form"><!-- start form login -->
+						    <div class="field">
+						      <div class="field">
+						        <label>Username</label>
+						        <input placeholder="First Name" type="text" name="username"> 
+						      </div>
+						      </div>
+
+						      <div class="field">
+						      <div class="field">
+						        <label>Password</label>
+						        <input placeholder="Password" type="password" name="password">
+						      </div>
+						      </div>
+						      <div class="ui inverted blue animated button baru" tabindex="0" type="submit">
+						      <div class="visible content">Register</div>
+						      <div class="hidden content"><i class="add user icon"></i></div>
+							 			</div>			 	
+						      <div class="ui inverted blue animated button" tabindex="0" type="submit">
+						      <div class="visible content">Sign</div>
+						      <div class="hidden content"><i class="right arrow icon"></i></div>
+							 			</div>
+										</div><!-- end form login -->
+							</div>
+			</div><!-- end login boss-->
+
+			<!-- modal register buku -->
+			<div class="ui basic modal loginboss">
+				  <div class="ui inverted segment register">
+			       <p style="opacity:1 !important">LOGIN</p>
+			        <br>
+						  <div class="ui inverted form"><!-- start form login -->
+						    <div class="field">
+						      <div class="field">
+						        <label>Email</label>
+						        <input placeholder="First Name" type="text" name="email"> 
+						      </div>
+						      </div>
+
+						      <div class="field">
+						      <div class="field">
+						        <label>Username</label>
+						        <input placeholder="username" type="text" name="username"> 
+						      </div>
+						      </div>
+							
+							  <div class="field">
+						      <div class="field">
+						        <label>Create New Password</label>
+						        <input placeholder="Password" type="password" name="password">
+						      </div>
+						      </div>
+								
+						      <div class="field">
+						      <div class="field">
+						        <label>Confrim Password</label>
+						        <input placeholder="Password" type="password" name="conpassword">
+						      </div>
+						      </div>
+						      <div class="ui inverted blue animated button baru" tabindex="0" type="submit">
+						      <div class="visible content">Register</div>
+						      <div class="hidden content"><i class="add user icon"></i></div>
+							 			</div>			 	
+										</div><!-- end form login -->
+							</div>
+			</div><!-- end modal register buku -->
+
+
+
+</div>
+
+</body>
+</html>
